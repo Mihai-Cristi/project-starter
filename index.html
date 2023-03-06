@@ -1,14 +1,558 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Title</title>
 
-  <link rel="stylesheet" href="./css/main.css">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Doomberg.com</title>
+
+	<link rel="stylesheet" href="./css/reboot.css">
+	<link rel="stylesheet" href="./css/main.css">
+	<!-- <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css"> -->
 </head>
+
 <body>
-  
+	<div class="principal">
+		<div class="principal__left">
+			<p>&nbsp</p>
+		</div>
+		<div class="principal__center">
+			<header>
+				<div class="container first">
+					<nav class="searchbar flex">
+						<img class="logo__main" src="https://res.cloudinary.com/dewznnjqr/image/upload/v1678117898/Logo_black_capsoff_yqxzfc.png" alt="Image of Doomberg Logo" />
+						<ul class="main__search flex spaced" data-visible="false">
+							<li class="search__item search">
+								<img class="search" src="https://res.cloudinary.com/dewznnjqr/image/upload/v1678117897/search_bklw9i.png" alt="Image of a Magnifying Glass">
+							</li>
+							<li class="search__item edition">
+								<p class="blackbold">US Edition</p>
+							</li>
+							<li class="search__item signin">
+								<p class="blackbold">Sign In</p>
+							</li>
+							<li class="search__item signup">
+								<p class="blackbold">Get Unlimited access</p>
+							</li>
+						</ul>
+					</nav>
+				</div>
+
+				<div class="container second">
+					<nav class="navigation flex">
+						<img class="logo" src="https://res.cloudinary.com/dewznnjqr/image/upload/v1678117898/Logo_black_capsoff_yqxzfc.png" alt="Image of Doomberg Logo" />
+
+						<button class="mobile-nav__toggle" aria-controls="primaryNav" aria-expanded="false">
+							<span class="sr-only">Menu</span>
+						</button>
+
+						<ul id="primaryNav" class="main__navigation flex spaced" data-visible="false">
+							<li class="navigation__item">
+								<a class="greybold" href="https://www.bloomberg.com/originals/live">Live now</a>
+							</li>
+							<div class="divider"></div>
+							<li class="navigation__item">
+								<a class="greybold" href="https://www.bloomberg.com/markets">Markets</a>
+							</li>
+							<div class="divider"></div>
+							<li class="navigation__item">
+								<a class="greybold" href="https://www.bloomberg.com/technology">Technology</a>
+							</li>
+							<div class="divider"></div>
+							<li class="navigation__item">
+								<a class="greybold" href="https://www.bloomberg.com/politics">Politics</a>
+							</li>
+							<div class="divider"></div>
+							<li class="navigation__item">
+								<a class="greybold" href="https://www.bloomberg.com/wealth">Wealth</a>
+							</li>
+							<div class="divider"></div>
+							<li class="navigation__item">
+								<a class="greybold" href="https://www.bloomberg.com/pursuits">Pursuits</a>
+							</li>
+							<div class="divider"></div>
+							<li class="navigation__item">
+								<a class="greybold" href="https://www.bloomberg.com/opinion">Opinion</a>
+							</li>
+							<div class="divider"></div>
+							<li class="navigation__item">
+								<a class="greybold" href="https://www.bloomberg.com/businessweek">Businessweek</a>
+							</li>
+							<div class="divider"></div>
+							<li class="navigation__item">
+								<a class="greybold" href="https://www.bloomberg.com/equality">Equality</a>
+							</li>
+							<div class="divider"></div>
+							<li class="navigation__item">
+								<a class="greybold" href="https://www.bloomberg.com/green">Green</a>
+							</li>
+							<div class="divider"></div>
+							<li class="navigation__item">
+								<a class="greybold" href="https://www.bloomberg.com/crypto">Crypto</a>
+							</li>
+							<div class="divider"></div>
+							<li class="navigation__item">
+								<a class="greybold" href="https://www.bloomberg.com/help?in_source=help-nav">More</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+
+				<div class="container third">
+					<nav class="stock flex">
+						<ul class="main__stock flex spaced" data-visible="false">
+							<li class="stock__item first1">
+								<a class="blackbold" href="https://www.bloomberg.com/quote/SPX:IND#xj4y7vzkg">Crude Oil</a>
+							</li>
+							<li class="stock__item">
+								<a class="blackbold" href="https://www.bloomberg.com/markets/rates-bonds/government-bonds/us">US 10
+									Yr</a>
+							</li>
+							<li class="stock__item">
+								<a class="blackbold"
+									href="https://www.bloomberg.com/quote/EURUSD:CUR?leadSource=uverify%20wall">Euro</a>
+							</li>
+							<li class="stock__item">
+								<a class="blackbold" href="https://www.bloomberg.com/quote/CCMP:IND">Nasdaq</a>
+							</li>
+
+							<li class="stock__item">
+								<a class="blackbold" href="https://www.bloomberg.com/quote/SPX:IND">S&P 500</a>
+								<!-- TradingView Widget BEGIN -->
+								<!-- <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js"
+							async>
+								{
+									"symbols": [
+										{
+											"proName": "FOREXCOM:SPXUSD",
+											"title": "S&P 500"
+										}
+									],
+										"colorTheme": "light",
+											"isTransparent": true,
+												"showSymbolLogo": false,
+													"largeChartUrl": "https://www.bloomberg.com/quote/SPX:IND",
+														"locale": "en",
+															"whitelabel": false,
+																"useWidgetHost": false
+								}
+							</script>
+					</div> -->
+								<!-- TradingView Widget END -->
+							</li>
+							<li class="stock__item">
+								<a class="blackbold" href="https://www.bloomberg.com/quote/INDU:IND">Dow Jones</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+
+				<script src="./js/main.js"></script>
+			</header>
+
+			<main>
+				<div class="container fourth">
+					<section class="markets">
+						<a
+							href="https://www.bloomberg.com/news/articles/2022-12-15/stock-market-traders-discover-that-bad-news-is-bad-after-all"><img
+								class="tradingpic" src="https://res.cloudinary.com/dewznnjqr/image/upload/v1678117898/tradingpic_t2ilid.png" alt="Image of Trading Floor" /></a>
+						<a class="whiteONblack" href="https://www.bloomberg.com/markets">MARKETS</a>
+						<div class="whiteONtop">Stock Market Traders Discover That Bad News Is Bad After All</div>
+						<p class="grayONtop">December 16, 2022</p>
+						<p class="grayONtop__button">More about this topic ›</p>
+					</section>
+
+					<aside class="latest flex">
+						<ul class="main__latest flex">
+							<li class="latest__item pink">
+								<a class="blackbold" href="https://www.bloomberg.com/search?query=LATEST">&nbsp&nbspLATEST</a>
+							</li>
+							<li class="latest__item plus graydivider">
+								<p class="greysmall">Politics</p>
+								<a class="black lineh"
+									href="https://www.bloomberg.com/news/articles/2022-11-28/frustrated-china-protesters-are-using-white-paper-to-resist-xi-s-covid-zero">China
+									Protesters are Using White Paper to Resist Xi's Covid Zero</a>
+								<p class="greysmall">updated 14 hours ago</p>
+							</li>
+							<li class="latest__item graydivider">
+								<p class="greysmall">Crypto</p>
+								<a class="black lineh"
+									href="https://www.bloomberg.com/news/articles/2022-11-28/how-hong-kong-singapore-korea-india-are-handling-crypto-regulation">Asian
+									Crypto Regulations Diverge as Singapore, Hong Kong Change Course (Podcast)</a>
+								<p class="greysmall">9 hours ago</p>
+							</li>
+							<li class="latest__item graydivider">
+								<p class="greysmall">Crypto</p>
+								<a class="black lineh"
+									href="https://www.bnnbloomberg.ca/sbf-s-250-million-bail-is-one-of-the-largest-in-us-history-it-doesn-t-mean-he-has-that-much-1.1862803">SBF's
+									$250 million Bail Is One of Largest in Us History. It Doesn't Mean He Has That Much</a>
+								<p class="greysmall">44 minutes ago</p>
+							</li>
+						</ul>
+					</aside>
+				</div>
+			</main>
+
+			<footer>
+				<div class="container fifth">
+					<div class="overflow_test2">
+						<p>&nbsp</p>
+					</div>
+					<img class="logo_white_capsoff" src="https://res.cloudinary.com/dewznnjqr/image/upload/v1678117897/Logo_white_capsoff_tznww9.png" alt="Image of Doomberg Logo" />
+					<div class="info1 flex">
+						<div class="online">
+							<div class="online__first">
+								<p>&nbsp</p>
+							</div>
+
+							<div class="online__second">
+								<img class="socialnetworks" src="https://res.cloudinary.com/dewznnjqr/image/upload/v1678117898/twitter_kybfok.png" />
+								<img class="socialnetworks" src="https://res.cloudinary.com/dewznnjqr/image/upload/v1678117897/linkedin_sjdvpg.png" />
+								<img class="socialnetworks" src="https://res.cloudinary.com/dewznnjqr/image/upload/v1678117897/mail_liq9bf.png" />
+								<img class="socialnetworks" src="https://res.cloudinary.com/dewznnjqr/image/upload/v1678117897/link_d9wrja.png" />
+							</div>
+						</div>
+
+						<div class="media flex">
+							<div class="media1 flex">
+								<p class="whiteONblacksmall">MEDIA</p>
+								<ul class="main__media">
+									<li class="media__item">
+										<p class="lightgrey">Doomberg Markets</p>
+									</li>
+									<li class="media__item">
+										<p class="lightgrey">Doomberg Technology</p>
+									</li>
+									<li class="media__item">
+										<p class="lightgrey">Doomberg Pursuits</p>
+									</li>
+									<li class="media__item">
+										<p class="lightgrey">Doomberg Politics</p>
+									</li>
+									<li class="media__item">
+										<p class="lightgrey">Doomberg Opinion</p>
+									</li>
+									<li class="media__item">
+										<p class="lightgrey">Doomberg Businessweek</p>
+									</li>
+									<li class="media__item">
+										<p class="lightgrey">Doomberg Live Conferences</p>
+									</li>
+									<li class="media__item">
+										<p class="lightgrey">Doomberg Radio</p>
+									</li>
+									<li class="media__item">
+										<p class="lightgrey">Doomberg Television</p>
+									</li>
+									<li class="media__item active">
+										<p class="lightgrey">News Bureaus</p>
+									</li>
+								</ul>
+							</div>
+
+							<div class="media2 flex">
+								<p class="whiteONblacksmall">MEDIA SERVICES</p>
+								<ul class="main__media">
+									<li class="media__item">
+										<p class="lightgrey">Doomberg Media Distribution</p>
+									</li>
+									<li class="media__item">
+										<p class="lightgrey">Advertising</p>
+									</li>
+									<li class="media__item">
+										<p class="lightgrey">&nbsp</p>
+									</li>
+									<li class="media__item">
+										<p class="lightgrey">&nbsp</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="media flex">
+							<div class="media1 flex">
+								<p class="whiteONblacksmall">PRODUCTS</p>
+								<ul class="main__media">
+									<li class="media__item">
+										<p class="lightgrey">Doomberg Terminal</p>
+									</li>
+									<li class="media__item">
+										<p class="lightgrey">Execution & Order Management</p>
+									</li>
+									<li class="media__item">
+										<p class="lightgrey">Content & Data</p>
+									</li>
+									<li class="media__item">
+										<p class="lightgrey">Financial Data Management</p>
+									</li>
+									<li class="media__item">
+										<p class="lightgrey">Integration & Distribution</p>
+									</li>
+									<li class="media__item">
+										<p class="lightgrey">Doomberg Tradebook</p>
+									</li>
+									<li class="media__item">
+										<p class="lightgrey">&nbsp</p>
+									</li>
+									<li class="media__item">
+										<p class="lightgrey">&nbsp</p>
+									</li>
+									<li class="media__item">
+										<p class="lightgrey">&nbsp</p>
+									</li>
+									<li class="media__item active">
+										<p class="lightgrey">&nbsp</p>
+									</li>
+								</ul>
+							</div>
+
+							<div class="media2 flex">
+								<p class="whiteONblacksmall">INDUSTRY PRODUCTS</p>
+								<ul class="main__media">
+									<li class="media__item">
+										<p class="lightgrey">Doomberg Law</p>
+									</li>
+									<li class="media__item">
+										<p class="lightgrey">Doomberg Tax</p>
+									</li>
+									<li class="media__item">
+										<p class="lightgrey">Doomberg Government</p>
+									</li>
+									<li class="media__item">
+										<p class="lightgrey">Doomberg NEF</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="media flex">
+							<div class="media1 flex">
+								<p class="whiteONblacksmall">COMPANY</p>
+								<ul class="main__media">
+									<li class="media__item">
+										<p class="lightgrey">About</p>
+									</li>
+									<li class="media__item">
+										<p class="lightgrey">Careers</p>
+									</li>
+									<li class="media__item">
+										<p class="lightgrey">Diversity and Inclusion</p>
+									</li>
+									<li class="media__item">
+										<p class="lightgrey">Tech At Doomberg</p>
+									</li>
+									<li class="media__item">
+										<p class="lightgrey">Philantroy</p>
+									</li>
+									<li class="media__item">
+										<p class="lightgrey">Sustainability</p>
+									</li>
+									<li class="media__item">
+										<p class="lightgrey">Doomberg London</p>
+									</li>
+									<li class="media__item">
+										<p class="lightgrey">Doomberg Beta</p>
+									</li>
+									<li class="media__item">
+										<p class="lightgrey">Gender-Equality Index</p>
+									</li>
+									<li class="media__item active">
+										<p class="lightgrey">&nbsp</p>
+									</li>
+								</ul>
+							</div>
+
+							<div class="media2 flex">
+								<p class="whiteONblacksmall">COMMUNICATIONS</p>
+								<ul class="main__media">
+									<li class="media__item">
+										<p class="lightgrey">Press Announcements</p>
+									</li>
+									<li class="media__item">
+										<p class="lightgrey">Press Contacts</p>
+									</li>
+									<li class="media__item">
+										<p class="lightgrey">&nbsp</p>
+									</li>
+									<li class="media__item">
+										<p class="lightgrey">&nbsp</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="media_blank flex">
+							<p class="lightgrey">&nbsp</p>
+						</div>
+					</div>
+
+					<div class="help flex">
+						<div class="grow flex">
+							<p class="darkgrey">All Rights Reserved. © 2022. Doomberg L.P.</p>
+						</div>
+						<div class="shrink flex">
+							<ul class="main__help flex">
+								<!-- <li class="help__item grow">
+						<p class="darkgrey">All Rights Reserved. © 2022. Doomberg L.P.</p>
+					</li> -->
+								<li class="help__item">
+									<p class="darkgrey">Terms of Service</p>
+								</li>
+								<li class="help__item">
+									<p class="darkgrey">Privacy Policy</p>
+								</li>
+								<li class="help__item">
+									<p class="darkgrey">Advertise</p>
+								</li>
+								<li class="help__item">
+									<p class="darkgrey">Help</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<div class="principal__left">
+			<p>&nbsp</p>
+		</div>
+	</div>
 </body>
+
+
+
+<!-- <body>
+	<div class="container">
+		<header id="topics_row">
+			<div class="row">
+				<div class="col-sm">
+					<a href="https://www.bloomberg.com/originals/live">Live now</a>
+				</div>
+
+				<div class="col-sm">
+					<a href="https://www.bloomberg.com/markets">Markets</a>
+				</div>
+
+				<div class="col-sm">
+					<a href="https://www.bloomberg.com/technology">Technology</a>
+				</div>
+
+				<div class="col-sm">
+					<a href="https://www.bloomberg.com/politics">Politics</a>
+				</div>
+
+				<div class="col-sm">
+					<a href="https://www.bloomberg.com/wealth">Wealth</a>
+				</div>
+
+				<div class="col-sm">
+					<a href="https://www.bloomberg.com/pursuits">Pursuits</a>
+				</div>
+
+				<div class="col-sm">
+					<a href="https://www.bloomberg.com/opinion">Opinion</a>
+				</div>
+
+				<div class="col-sm">
+					<a href="https://www.bloomberg.com/businessweek">Businessweek</a>
+				</div>
+
+				<div class="col-sm">
+					<a href="https://www.bloomberg.com/equality">Equality</a>
+				</div>
+
+				<div class="col-sm">
+					<a href="https://www.bloomberg.com/green">Green</a>
+				</div>
+
+				<div class="col-sm">
+					<a href="https://www.bloomberg.com/crypto">Crypto</a>
+				</div>
+
+				<div class="col-sm">
+					<a href="https://www.bloomberg.com/help?in_source=help-nav">More</a>
+				</div>
+
+			</div>
+		</header>
+
+		<header class="stockprice_row">Crude Oil</header>
+		<nav class="navigation_row">Bloomberg</nav>
+
+		<section>Markets</section>
+		<aside>LATEST</aside>
+		<main>3 Columns</main>
+		<footer class="live_row">live</footer>
+		<footer class="signup_row">Sign up</footer>
+	</div>
+</body> -->
+
+
+<!-- <body>
+	<div class="container">
+		<header class="topics_row">
+			<ul id="primaryHead" class="main__head" data-visible="false">
+				<li class="main__head__item">
+					<a href="https://www.bloomberg.com/originals/live">Live now</a>
+				</li>
+
+				<li class="main__head__item">
+					<a href="https://www.bloomberg.com/markets">Markets</a>
+				</li>
+
+				<li class="main__head__item">
+					<a href="https://www.bloomberg.com/technology">Technology</a>
+				</li>
+
+				<li class="main__head__item">
+					<a href="https://www.bloomberg.com/politics">Politics</a>
+				</li>
+
+				<li class="main__head__item">
+					<a href="https://www.bloomberg.com/wealth">Wealth</a>
+				</li>
+
+				<li class="main__head__item">
+					<a href="https://www.bloomberg.com/pursuits">Pursuits</a>
+				</li>
+
+				<li class="main__head__item">
+					<a href="https://www.bloomberg.com/opinion">Opinion</a>
+				</li>
+
+				<li class="main__head__item">
+					<a href="https://www.bloomberg.com/businessweek">Businessweek</a>
+				</li>
+
+				<li class="main__head__item">
+					<a href="https://www.bloomberg.com/equality">Equality</a>
+				</li>
+
+				<li class="main__head__item">
+					<a href="https://www.bloomberg.com/green">Green</a>
+				</li>
+
+				<li class="main__head__item">
+					<a href="https://www.bloomberg.com/crypto">Crypto</a>
+				</li>
+
+				<li class="main__head__item">
+					<a href="https://www.bloomberg.com/help?in_source=help-nav">More</a>
+				</li>
+			</ul>
+		</header>
+
+
+
+	<header class="stockprice_row">Crude Oil</header>
+	<nav class="navigation_row">Bloomberg</nav>
+
+	<section>Markets</section>
+	<aside>LATEST</aside>
+	<main>3 Columns</main>
+	<footer class="live_row">live</footer>
+	<footer class="signup_row">Sign up</footer>
+	</div>
+</body> -->
+
 </html>
