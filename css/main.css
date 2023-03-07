@@ -1,6 +1,8 @@
 /* This is your custom CSS file */
 /* Variables */
 
+@media screen and (min-width: 45rem) {
+
 :root {
 	--x-gap: 0.5rem;
 	--y-gap: 1rem;
@@ -9,6 +11,7 @@
 /* General */
 
 body {
+	zoom: 0.8;
 	background: white;
 	background-repeat: no-repeat;
 	background-size: auto;
@@ -20,6 +23,88 @@ body {
 	height: 100%; */
 }
 
+
+.black {
+	color: black;
+	margin: 0rem;
+}
+
+.lineh {
+	display: block;
+	line-height: 1.2;
+}
+
+.blackbold {
+	color: black;
+	font-weight: bold;
+	margin: 0rem;
+	/* overflow-wrap: break-word;
+	word-break: break-all; */
+}
+
+.grey {
+	color: rgb(150, 150, 150);
+}
+
+.greybold {
+	color: rgb(150, 150, 150);
+	font-weight: bold;
+}
+
+
+.logo {
+	display: none;
+}
+
+.logo_black_capsoff {
+	zoom: 1;
+	position: relative;
+	width: 9rem;
+	top: 1rem;
+	left: -0.5rem;
+}
+
+.mobile-nav__toggle {
+	background: url('https://res.cloudinary.com/dewznnjqr/image/upload/v1678117897/menu_lmrywe.webp');
+	background-repeat: no-repeat;
+	border: 0;
+	display: block;
+	background-size: contain;
+	position: absolute;
+	width: 3rem;
+	aspect-ratio: 1;
+	top: 1rem;
+	right: 0rem;
+	z-index: 9999;
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}
+
+.principal {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.principal__center {
+	/* width: 1200px; */
+	margin-left: 0rem;
+	margin-right: 0rem;
+	/* background-color: yellow; */
+	/* max-width: 100%; */
+	width: 840px;
+	flex-direction: column;
+}
+
 .divider {
 	display: none;
 }
@@ -28,15 +113,39 @@ body {
 	display: none;
 }
 
+.stock {
+	overflow: auto;
+	white-space: nowrap;
+	/* background-color: red; */
+}
+
 .main__stock {
 	display: inline-block;
-	gap: 5rem !important;
+	gap: 11rem !important;
 	justify-content: space-between;
+	flex-direction: row;
 	list-style: none;
 	overflow: auto;
 	white-space: nowrap;
+	margin-top: 2rem;
+	/* background-color: blue; */
+	padding-left: 0rem;
+	width: 100%;
+	border-bottom: 2px solid rgb(200, 200, 200);
+	border-top: 2px solid rgb(200, 200, 200);
+	margin-bottom: 1rem;
 }
 
+.stock__item {
+	display: inline-block;
+	text-align: center;
+}
+
+
+
+/* .stock__item a:hover {
+	background-color: yellow;
+} */
 
 
 
@@ -45,7 +154,7 @@ body {
 
 .fourth {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 }
 
 .markets {
@@ -64,7 +173,9 @@ body {
 	display: absolute;
 	top: 0;
 	left: 0;
-	width: 51.2rem;
+	/* width: 51.2; */
+	max-width: 100%;
+	width: 100%;
 	padding-bottom: 1rem;
 }
 
@@ -108,17 +219,18 @@ body {
 }
 
 .latest {
+	flex-direction: row;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
 	order: 2;
 	flex-shrink: 0;
-	width: 14.3rem;
+	width: 100%;
 }
 
 .main__latest {
 	position: relative;
-	flex-direction: column;
-	gap: 0.01rem !important;
+	flex-direction: row;
+	gap: 1rem !important;
 	inset: unset;
 	padding: 0rem 0rem 0.5rem 0rem;
 
@@ -131,9 +243,29 @@ body {
 	overflow: hidden;
 }
 
+.latest__item.pink {
+	display: none;
+}
+
+a.black.lineh {
+	display: block;
+	height: 5rem;
+	width: 240px;
+}
+
+li.latest__item.graydivider {
+	border-left: 2px solid rgb(200, 200, 200);
+	padding-left: 30px;
+}
+
+li.latest__item.plus.graydivider {
+	border-left: none;
+	padding-left: 0rem;
+}
+
 .graydivider {
-	border-bottom: 2px solid rgb(200, 200, 200);
-	padding-bottom: 0.5rem;
+	border-bottom: none;
+	padding-bottom: none;
 }
 
 .pink {
@@ -145,8 +277,8 @@ body {
 }
 
 .plus {
-	border-top: 2px solid rgb(200, 200, 200);
-	padding-bottom: 0.5rem;
+	border-top: none;
+	padding-bottom: none;
 }
 
 .greysmall {
@@ -162,9 +294,10 @@ body {
 
 
 
-.fifth {
-	display: none;
-}
+
+
+
+
 
 .main__navigation {
 	position: fixed;
@@ -223,25 +356,9 @@ a:hover {
 	text-decoration: none;
 }
 
-.logo {
-	max-width: 6rem;
-	padding: 1rem;
-	left: 4rem;
-}
 
-.mobile-nav__toggle {
-	background: url('https://res.cloudinary.com/dewznnjqr/image/upload/v1678117897/menu_lmrywe.webp');
-	background-repeat: no-repeat;
-	border: 0;
-	display: block;
-	background-size: contain;
-	position: absolute;
-	width: 2rem;
-	aspect-ratio: 1;
-	top: 0.75rem;
-	right: 0rem;
-	z-index: 9999;
-}
+
+
 
 /* Utility */
 
@@ -253,28 +370,183 @@ a:hover {
 	gap: var(--x-gap, --y-gap);
 }
 
-.sr-only {
+
+
+
+
+
+footer {
+	display: block;
+	position: relative;
+	width: 840px;
+
+
+	/* margin-bottom: -2rem; */
+}
+
+.overflow_test2 {
 	position: absolute;
-	width: 1px;
-	height: 1px;
-	padding: 0;
-	margin: -1px;
+	width: 1000vw;
+	margin-left: -500vw;
+	left: 50%;
+	height: 100%;
+	background-color: #111111;
 	overflow: hidden;
-	clip: rect(0, 0, 0, 0);
-	border: 0;
+}
+
+.fifth {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	width: 100%;
+	justify-content: center;
+	padding: 0rem 0rem 2rem 0rem;
+	gap: 1rem !important;
+	inset: unset;
+	flex-wrap: nowrap;
+	margin-top: 2rem;
+}
+
+.online__first {
+	height: 2.5rem;
+}
+
+.logo_white_capsoff {
+	position: absolute;
+	left: -0.5rem;
+	top: 1.2rem;
+	width: 10rem;
+}
+
+.online {
+	flex-direction: column;
+	width: 10rem;
+}
+
+.socialnetworks {
+	position: relative;
+	width: 2rem;
+}
+
+.info1 {
+	position: relative;
+	flex-direction: row;
+	gap: 1rem !important;
+	inset: unset;
+	justify-content: space-between;
+
+	list-style: none;
+
+	width: 100%;
+	padding: 2rem 0rem 1rem 0rem;
+
+}
+
+.media {
+	position: relative;
+	flex-direction: column;
+}
+
+.media1 {
+	position: relative;
+	flex-direction: column;
+}
+
+.media2 {
+	position: relative;
+	flex-direction: column;
+}
+
+.active {
+	margin-bottom: 2rem;
+}
+
+.main__media {
+	position: relative;
+	flex-direction: column;
+	inset: unset;
+	list-style: none;
+
+	text-align: left;
+	padding: 0;
+}
+
+.whiteONblacksmall {
+	color: white;
+	height: 1rem;
+}
+
+.lightgrey {
+	color: rgb(100, 100, 100);
+	margin: 0rem;
+	font-size: small;
+}
+
+.media_blank {
+	width: 0.01px;
+}
+
+.help {
+	position: relative;
+	flex-direction: row;
+	gap: 1rem !important;
+	inset: unset;
+	justify-content: space-between;
+
+	list-style: none;
+
+	width: 100%;
+	border-top: 2px solid rgb(60, 60, 60);
+	padding: 1rem 0rem 0rem 0rem;
+
+	margin-bottom: -1rem;
+}
+
+.darkgrey {
+	color: rgb(60, 60, 60);
+	margin: 0rem;
+	font-size: small;
+}
+
+.shrink {
+	flex-grow: 1.78;
+}
+
+.grow {
+	flex-grow: 2;
+}
+
+.main__help {
+	position: relative;
+	flex-direction: row;
+	gap: 1rem !important;
+	inset: unset;
+	justify-content: space-between;
+
+	list-style: none;
+
+	width: 100%;
+	padding: 0rem 0rem 0rem 0rem;
+	flex: 2;
+	flex-direction: row;
+
+	text-align: right;
 }
 
 /* @media screen and (max-width: 76rem) { */
 
-@media screen and (max-width: 112.5rem) and (min-width: 45rem) {
+@media screen and (min-width: 60rem) {
 	.mobile-nav__toggle {
 		display: none;
+	}
+
+	body {
+		zoom: 0.8;
 	}
 
 	.black {
 		color: black;
 		margin: 0rem;
-
 	}
 
 	.lineh {
@@ -319,6 +591,10 @@ a:hover {
 		margin: 0rem;
 		margin-left: 3.725rem;
 		top: 0.1rem;
+	}
+
+	.logo_black_capsoff {
+		display: none;
 	}
 
 	.main__search {
@@ -418,6 +694,11 @@ a:hover {
 		justify-content: space-between;
 		flex-wrap: nowrap;
 		list-style: none;
+		margin-top: 0rem;
+
+
+		border-top: none;
+		margin-bottom: 0.5rem;
 
 		/* display: inline-block; */
 		/* gap: 0.01rem !important;
@@ -442,21 +723,19 @@ a:hover {
 		inset: unset;
 		align-items: center;
 		justify-content: space-between;
-		/* padding: 0rem 10rem 0.5rem 0rem; */
 		text-align: left;
 		order: 1;
 		flex-basis: 100%;
 		flex-shrink: 1;
 		margin: 0;
-		/* width: max-content; */
-		/* background-color: red; */
 	}
 
 	.tradingpic {
 		display: absolute;
 		top: 0;
 		left: 0;
-		width: 51.2rem;
+		width: 51.1rem;
+		max-width: 51.1rem;
 		padding-bottom: 1rem;
 	}
 
@@ -532,6 +811,26 @@ a:hover {
 		overflow: hidden;
 	}
 
+	.latest__item.pink {
+		display: block;
+	}
+
+	a.black.lineh {
+		display: block;
+		height: 100%;
+		width: 100%;
+	}
+
+	li.latest__item.graydivider {
+		border-left: none;
+		padding-left: 0rem;
+	}
+
+	li.latest__item.plus.graydivider {
+		border-left: none;
+		padding-left: 0rem;
+	}
+
 	.graydivider {
 		border-bottom: 2px solid rgb(200, 200, 200);
 		padding-bottom: 0.5rem;
@@ -559,14 +858,20 @@ a:hover {
 		height: 1rem;
 	}
 
-		.overflow_test2 {
+	.overflow_test2 {
 		position: absolute;
-		width:1000vw;
+		width: 1000vw;
 		margin-left: -500vw;
 		left: 50%;
 		height: 100%;
 		background-color: #111111;
 		overflow: hidden;
+	}
+
+	footer {
+		display: block;
+		position: relative;
+		width: 100%;
 	}
 
 	.fifth {
@@ -719,7 +1024,11 @@ a:hover {
 
 	.principal__center {
 		width: 1200px;
+		max-width: 1200px;
 		margin-bottom: 0rem;
+		margin-left: 0rem;
+		margin-right: 0rem;
+		flex-direction: column;
 	}
 
 	/* main {
@@ -740,90 +1049,108 @@ a:hover {
 
 }
 
-
-@media screen and (max-width: 75rem) {
+@media screen and (min-width: 67.5rem) {
 	body {
 		zoom: 0.9;
-		/* background-color: blue; */
 	}
 }
 
-@media screen and (max-width: 67.5rem) {
-	body {
-		zoom: 0.8;
-		/* background-color: blue; */
-	}
-}
-
-@media screen and (max-width: 60rem) {
-	body {
-		zoom: 0.7;
-		/* background-color: blue; */
-	}
-}
-
-@media screen and (max-width: 52.5rem) {
-	body {
-		zoom: 0.6;
-		/* background-color: blue; */
-	}
-}
-
-@media screen and (max-width: 52.5rem) {
-	body {
-		zoom: 0.5;
-		/* background-color: blue; */
-	}
-}
-
-@media screen and (max-width: 45rem) {
-	body {
-		zoom: 0.4;
-		/* background-color: blue; */
-	}
-}
-
-@media screen and (min-width: 75.1rem) {
+@media screen and (min-width: 75rem) {
 	body {
 		zoom: 1;
-		/* background-color: blue; */
 	}
 }
 
 @media screen and (min-width: 82.5rem) {
 	body {
 		zoom: 1.1;
-		/* background-color: blue; */
+	}
+}
+
+@media screen and (min-width: 97.5rem) {
+	body {
+		zoom: 1.2;
+	}
+}
+
+@media screen and (min-width: 105rem) {
+	body {
+		zoom: 1.3;
+	}
+}
+}
+/*
+@media screen and (max-width: 75rem) {
+	body {
+		zoom: 0.9;
+	}
+}
+
+@media screen and (max-width: 67.5rem) {
+	body {
+		zoom: 0.8;
+	}
+}
+
+@media screen and (max-width: 60rem) {
+	body {
+		zoom: 0.7;
+	}
+}
+
+@media screen and (max-width: 52.5rem) {
+	body {
+		zoom: 0.6;
+	}
+}
+
+@media screen and (max-width: 52.5rem) {
+	body {
+		zoom: 0.5;
+	}
+}
+
+@media screen and (max-width: 45rem) {
+	body {
+		zoom: 0.4;
+	}
+}
+
+@media screen and (min-width: 75.1rem) {
+	body {
+		zoom: 1;
+	}
+}
+
+@media screen and (min-width: 82.5rem) {
+	body {
+		zoom: 1.1;
 	}
 }
 
 @media screen and (min-width: 90rem) {
 	body {
 		zoom: 1.2;
-		/* background-color: blue; */
 	}
 }
 
 @media screen and (min-width: 97.5rem) {
 	body {
 		zoom: 1.3;
-		/* background-color: blue; */
 	}
 }
 
 @media screen and (min-width: 105rem) {
 	body {
 		zoom: 1.4;
-		/* background-color: blue; */
 	}
 }
 
 @media screen and (min-width: 112.5rem) {
 	body {
 		zoom: 1.5;
-		/* background-color: blue; */
 	}
-}
+} */
 
 /* } */
 /* body {
