@@ -12,7 +12,7 @@
 	<!-- <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css"> -->
 </head>
 
-<body>
+<body class="shrink">
 	<div class="principal">
 		<div class="principal__left">
 			<p>&nbsp</p>
@@ -21,10 +21,14 @@
 			<header>
 				<div class="container first">
 					<nav class="searchbar flex">
-						<img class="logo__main" src="https://res.cloudinary.com/dewznnjqr/image/upload/v1678117898/Logo_black_capsoff_yqxzfc.png" alt="Image of Doomberg Logo" />
+						<img class="logo__main"
+							src="https://res.cloudinary.com/dewznnjqr/image/upload/v1678117898/Logo_black_capsoff_yqxzfc.png"
+							alt="Image of Doomberg Logo" />
 						<ul class="main__search flex spaced" data-visible="false">
 							<li class="search__item search">
-								<img class="search" src="https://res.cloudinary.com/dewznnjqr/image/upload/v1678117897/search_bklw9i.png" alt="Image of a Magnifying Glass">
+								<img class="search"
+									src="https://res.cloudinary.com/dewznnjqr/image/upload/v1678117897/search_bklw9i.png"
+									alt="Image of a Magnifying Glass">
 							</li>
 							<li class="search__item edition">
 								<p class="blackbold">US Edition</p>
@@ -41,13 +45,25 @@
 
 				<div class="container second">
 					<nav class="navigation flex">
-						<img class="logo" src="https://res.cloudinary.com/dewznnjqr/image/upload/v1678117898/Logo_black_capsoff_yqxzfc.png" alt="Image of Doomberg Logo" />
+						<img class="logo"
+							src="https://res.cloudinary.com/dewznnjqr/image/upload/v1678117898/Logo_black_capsoff_yqxzfc.png"
+							alt="Image of Doomberg Logo" />
 
-						<button class="mobile-nav__toggle" aria-controls="primaryNav" aria-expanded="false">
+						<button class="mobile-nav__toggle" aria-controls="primaryNav" aria-co aria-expanded="false">
 							<span class="sr-only">Menu</span>
 						</button>
 
 						<ul id="primaryNav" class="main__navigation flex spaced" data-visible="false">
+							<li class="navigation__item noborder">
+								<img id="LogoWCO" class="logo_white_capsoff_button"
+									src="https://res.cloudinary.com/dewznnjqr/image/upload/v1678117897/Logo_white_capsoff_tznww9.png"
+									alt="Image of Doomberg Logo" />
+							</li>
+							<!-- <li class="navigation__item noborder">
+								<img id="LogoWCO" class="logo_menu2"
+									src="https://res.cloudinary.com/dewznnjqr/image/upload/v1678370103/Menu2_l654tq.png"
+									alt="Image of Doomberg Logo" />
+							</li> -->
 							<li class="navigation__item">
 								<a class="greybold" href="https://www.bloomberg.com/originals/live" target="_blank">Live now</a>
 							</li>
@@ -100,26 +116,30 @@
 				</div>
 
 				<div class="container third">
-					<img class="logo_black_capsoff" src="https://res.cloudinary.com/dewznnjqr/image/upload/v1678117898/Logo_black_capsoff_yqxzfc.png" alt="Image of Doomberg Logo" />
-					<nav class="stock flex">
+					<img class="logo_black_capsoff"
+						src="https://res.cloudinary.com/dewznnjqr/image/upload/v1678117898/Logo_black_capsoff_yqxzfc.png"
+						alt="Image of Doomberg Logo" />
+					<nav class="stock flex noflex">
 						<ul class="main__stock flex spaced" data-visible="false">
 							<li class="stock__item first1">
-								<a class="blackbold" href="https://www.bloomberg.com/quote/SPX:IND#xj4y7vzkg" target="_blank">Crude Oil</a>
+								<a class="blackbold" href="https://www.bloomberg.com/quote/SPX:IND#xj4y7vzkg" target="_blank">Crude
+									Oil<span class="price">&nbsp&nbsp11,226.36</span><span class="percentage_minus">&nbsp&nbsp-1.13%</span></a>
 							</li>
 							<li class="stock__item">
-								<a class="blackbold" href="https://www.bloomberg.com/markets/rates-bonds/government-bonds/us" target="_blank">US 10
-									Yr</a>
+								<a class="blackbold" href="https://www.bloomberg.com/markets/rates-bonds/government-bonds/us"
+									target="_blank">US 10
+									Yr<span class="price">&nbsp&nbsp3,54</span><span class="percentage_plus">&nbsp&nbsp+12,21%</span></a>
 							</li>
 							<li class="stock__item">
-								<a class="blackbold"
-									href="https://www.bloomberg.com/quote/EURUSD:CUR?leadSource=uverify%20wall" target="_blank">Euro</a>
+								<a class="blackbold" href="https://www.bloomberg.com/quote/EURUSD:CUR?leadSource=uverify%20wall"
+									target="_blank">Euro<span class="price">&nbsp&nbsp1,05</span><span class="percentage_plus">&nbsp&nbsp+0,22%</span></a>
 							</li>
 							<li class="stock__item">
-								<a class="blackbold" href="https://www.bloomberg.com/quote/CCMP:IND" target="_blank">Nasdaq</a>
+								<a class="blackbold" href="https://www.bloomberg.com/quote/CCMP:IND" target="_blank">Nasdaq<span class="price">&nbsp&nbsp11,226.36</span><span class="percentage_minus">&nbsp&nbsp-1.23%</span></a>
 							</li>
 
 							<li class="stock__item">
-								<a class="blackbold" href="https://www.bloomberg.com/quote/SPX:IND" target="_blank">S&P 500</a>
+								<a class="blackbold" href="https://www.bloomberg.com/quote/SPX:IND" target="_blank">S&P 500<span class="price">&nbsp&nbsp4,025.12</span><span class="percentage_minus">&nbsp&nbsp-1.79%</span></a>
 								<!-- TradingView Widget BEGIN -->
 								<!-- <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js"
 							async>
@@ -143,13 +163,13 @@
 								<!-- TradingView Widget END -->
 							</li>
 							<li class="stock__item">
-								<a class="blackbold" href="https://www.bloomberg.com/quote/INDU:IND" target="_blank">Dow Jones</a>
+								<a class="blackbold" href="https://www.bloomberg.com/quote/INDU:IND" target="_blank">Dow Jones<span class="price">&nbsp&nbsp33,957.10</span><span class="percentage_minus">&nbsp&nbsp-1.40%</span></a>
 							</li>
 						</ul>
 					</nav>
 				</div>
 
-				<script src="./js/main.js"></script>
+				<script src="js/main.js"></script>
 			</header>
 
 			<main>
@@ -157,7 +177,9 @@
 					<section class="markets">
 						<a
 							href="https://www.bloomberg.com/news/articles/2022-12-15/stock-market-traders-discover-that-bad-news-is-bad-after-all"><img
-								class="tradingpic" src="https://res.cloudinary.com/dewznnjqr/image/upload/v1678117898/tradingpic_t2ilid.png" alt="Image of Trading Floor" /></a>
+								class="tradingpic"
+								src="https://res.cloudinary.com/dewznnjqr/image/upload/v1678117898/tradingpic_t2ilid.png"
+								alt="Image of Trading Floor" /></a>
 						<a class="whiteONblack" href="https://www.bloomberg.com/markets" target="_blank">MARKETS</a>
 						<div class="whiteONtop">Stock Market Traders Discover That Bad News Is Bad After All</div>
 						<p class="grayONtop">December 16, 2022</p>
@@ -167,26 +189,30 @@
 					<aside class="latest flex">
 						<ul class="main__latest flex">
 							<li class="latest__item pink">
-								<a class="blackbold" href="https://www.bloomberg.com/search?query=LATEST" target="_blank">&nbsp&nbspLATEST</a>
+								<a class="blackbold" href="https://www.bloomberg.com/search?query=LATEST"
+									target="_blank">&nbsp&nbspLATEST</a>
 							</li>
 							<li class="latest__item plus graydivider">
 								<p class="greysmall">Politics</p>
 								<a class="black lineh"
-									href="https://www.bloomberg.com/news/articles/2022-11-28/frustrated-china-protesters-are-using-white-paper-to-resist-xi-s-covid-zero" target="_blank">China
+									href="https://www.bloomberg.com/news/articles/2022-11-28/frustrated-china-protesters-are-using-white-paper-to-resist-xi-s-covid-zero"
+									target="_blank">China
 									Protesters are Using White Paper to Resist Xi's Covid Zero</a>
 								<p class="greysmall">updated 14 hours ago</p>
 							</li>
 							<li class="latest__item graydivider">
 								<p class="greysmall">Crypto</p>
 								<a class="black lineh"
-									href="https://www.bloomberg.com/news/articles/2022-11-28/how-hong-kong-singapore-korea-india-are-handling-crypto-regulation" target="_blank">Asian
+									href="https://www.bloomberg.com/news/articles/2022-11-28/how-hong-kong-singapore-korea-india-are-handling-crypto-regulation"
+									target="_blank">Asian
 									Crypto Regulations Diverge as Singapore, Hong Kong Change Course (Podcast)</a>
 								<p class="greysmall">9 hours ago</p>
 							</li>
 							<li class="latest__item graydivider">
 								<p class="greysmall">Crypto</p>
 								<a class="black lineh"
-									href="https://www.bnnbloomberg.ca/sbf-s-250-million-bail-is-one-of-the-largest-in-us-history-it-doesn-t-mean-he-has-that-much-1.1862803" target="_blank">SBF's
+									href="https://www.bnnbloomberg.ca/sbf-s-250-million-bail-is-one-of-the-largest-in-us-history-it-doesn-t-mean-he-has-that-much-1.1862803"
+									target="_blank">SBF's
 									$250 million Bail Is One of Largest in Us History. It Doesn't Mean He Has That Much</a>
 								<p class="greysmall">44 minutes ago</p>
 							</li>
@@ -200,18 +226,24 @@
 					<div class="overflow_test2">
 						<p>&nbsp</p>
 					</div>
-					<img class="logo_white_capsoff" src="https://res.cloudinary.com/dewznnjqr/image/upload/v1678117897/Logo_white_capsoff_tznww9.png" alt="Image of Doomberg Logo" />
+					<img class="logo_white_capsoff"
+						src="https://res.cloudinary.com/dewznnjqr/image/upload/v1678117897/Logo_white_capsoff_tznww9.png"
+						alt="Image of Doomberg Logo" />
 					<div class="info1 flex">
-						<div class="online">
+						<div class="online__">
 							<div class="online__first">
 								<p>&nbsp</p>
 							</div>
 
 							<div class="online__second">
-								<img class="socialnetworks" src="https://res.cloudinary.com/dewznnjqr/image/upload/v1678117898/twitter_kybfok.png" />
-								<img class="socialnetworks" src="https://res.cloudinary.com/dewznnjqr/image/upload/v1678117897/linkedin_sjdvpg.png" />
-								<img class="socialnetworks" src="https://res.cloudinary.com/dewznnjqr/image/upload/v1678117897/mail_liq9bf.png" />
-								<img class="socialnetworks" src="https://res.cloudinary.com/dewznnjqr/image/upload/v1678117897/link_d9wrja.png" />
+								<img class="socialnetworks"
+									src="https://res.cloudinary.com/dewznnjqr/image/upload/v1678117898/twitter_kybfok.png" />
+								<img class="socialnetworks"
+									src="https://res.cloudinary.com/dewznnjqr/image/upload/v1678117897/linkedin_sjdvpg.png" />
+								<img class="socialnetworks"
+									src="https://res.cloudinary.com/dewznnjqr/image/upload/v1678117897/mail_liq9bf.png" />
+								<img class="socialnetworks"
+									src="https://res.cloudinary.com/dewznnjqr/image/upload/v1678117897/link_d9wrja.png" />
 							</div>
 						</div>
 
@@ -419,141 +451,5 @@
 		</div>
 	</div>
 </body>
-
-
-
-<!-- <body>
-	<div class="container">
-		<header id="topics_row">
-			<div class="row">
-				<div class="col-sm">
-					<a href="https://www.bloomberg.com/originals/live">Live now</a>
-				</div>
-
-				<div class="col-sm">
-					<a href="https://www.bloomberg.com/markets">Markets</a>
-				</div>
-
-				<div class="col-sm">
-					<a href="https://www.bloomberg.com/technology">Technology</a>
-				</div>
-
-				<div class="col-sm">
-					<a href="https://www.bloomberg.com/politics">Politics</a>
-				</div>
-
-				<div class="col-sm">
-					<a href="https://www.bloomberg.com/wealth">Wealth</a>
-				</div>
-
-				<div class="col-sm">
-					<a href="https://www.bloomberg.com/pursuits">Pursuits</a>
-				</div>
-
-				<div class="col-sm">
-					<a href="https://www.bloomberg.com/opinion">Opinion</a>
-				</div>
-
-				<div class="col-sm">
-					<a href="https://www.bloomberg.com/businessweek">Businessweek</a>
-				</div>
-
-				<div class="col-sm">
-					<a href="https://www.bloomberg.com/equality">Equality</a>
-				</div>
-
-				<div class="col-sm">
-					<a href="https://www.bloomberg.com/green">Green</a>
-				</div>
-
-				<div class="col-sm">
-					<a href="https://www.bloomberg.com/crypto">Crypto</a>
-				</div>
-
-				<div class="col-sm">
-					<a href="https://www.bloomberg.com/help?in_source=help-nav">More</a>
-				</div>
-
-			</div>
-		</header>
-
-		<header class="stockprice_row">Crude Oil</header>
-		<nav class="navigation_row">Bloomberg</nav>
-
-		<section>Markets</section>
-		<aside>LATEST</aside>
-		<main>3 Columns</main>
-		<footer class="live_row">live</footer>
-		<footer class="signup_row">Sign up</footer>
-	</div>
-</body> -->
-
-
-<!-- <body>
-	<div class="container">
-		<header class="topics_row">
-			<ul id="primaryHead" class="main__head" data-visible="false">
-				<li class="main__head__item">
-					<a href="https://www.bloomberg.com/originals/live">Live now</a>
-				</li>
-
-				<li class="main__head__item">
-					<a href="https://www.bloomberg.com/markets">Markets</a>
-				</li>
-
-				<li class="main__head__item">
-					<a href="https://www.bloomberg.com/technology">Technology</a>
-				</li>
-
-				<li class="main__head__item">
-					<a href="https://www.bloomberg.com/politics">Politics</a>
-				</li>
-
-				<li class="main__head__item">
-					<a href="https://www.bloomberg.com/wealth">Wealth</a>
-				</li>
-
-				<li class="main__head__item">
-					<a href="https://www.bloomberg.com/pursuits">Pursuits</a>
-				</li>
-
-				<li class="main__head__item">
-					<a href="https://www.bloomberg.com/opinion">Opinion</a>
-				</li>
-
-				<li class="main__head__item">
-					<a href="https://www.bloomberg.com/businessweek">Businessweek</a>
-				</li>
-
-				<li class="main__head__item">
-					<a href="https://www.bloomberg.com/equality">Equality</a>
-				</li>
-
-				<li class="main__head__item">
-					<a href="https://www.bloomberg.com/green">Green</a>
-				</li>
-
-				<li class="main__head__item">
-					<a href="https://www.bloomberg.com/crypto">Crypto</a>
-				</li>
-
-				<li class="main__head__item">
-					<a href="https://www.bloomberg.com/help?in_source=help-nav">More</a>
-				</li>
-			</ul>
-		</header>
-
-
-
-	<header class="stockprice_row">Crude Oil</header>
-	<nav class="navigation_row">Bloomberg</nav>
-
-	<section>Markets</section>
-	<aside>LATEST</aside>
-	<main>3 Columns</main>
-	<footer class="live_row">live</footer>
-	<footer class="signup_row">Sign up</footer>
-	</div>
-</body> -->
 
 </html>
